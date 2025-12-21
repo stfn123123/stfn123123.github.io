@@ -1,59 +1,68 @@
-# Praxisbsp
+# Praxisbeispiel 1
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+## Produkt das ich anbiete:
+ich bin nebenberuflich Fitnesstrainer und
+werde passend dazu eine Website bauen, die mich als Trainer und meine Dienstleistungen vorstellt.
+- Preise für eine personal training...
+    - Einzelstunde
+    - 10er Block
+    - 5er Block
+    - monatlicher Preis mit persönlicher Beratung jederzeit, Trainings- und Ernährungsplan, ...
 
-## Development server
+- Wo:
+  - imaginäres Fitnesstudio in Wien
+- Anzahl der MItarbeiter
+  - nur ich
 
-To start a local development server, run:
+## Inhalte der Website:
+- Bewerbung, bzw Anmeldung für ein coaching
+  - gemockter Zahlverlauf, (abo bzw einzelstunden)
+  
+- Lizenz Seite
+  - Definieren Sie welche Nutzungsrechte durch den Kauf erworben werden
+  - Definieren Sie welche Rechte beim Unternehmen verbleiben
+  - Formulieren Sie Haftungsbeschränkungen, um Ihre eigene Haftung angemessen zu reduzieren.
+  
+- Kontaktseite
+  - Erstellen Sie ein Impressum das den Pflichten gemäß § 24 Mediengesetz bzw. den jeweiligen nationalen Vorschriften entspricht.
+  
+- Datenschutzerklärung
+  - Berücksichtigen Sie typische Webshop-Prozesse (z. B. Kontaktformular, Analyse-Tools, Cookies, auch wenn diese auf Ihrer Seite nur gemockt sind).
 
-```bash
-ng serve
-```
+- Barrierefreiheit 
+  - Die Website ist WCAG 2.2 AA konform.
+  - Die Website ist visuell ansprechend und konsistent gestaltet (Farbschema, Typografie, Layout).
+  - Die Website enthält eine Barrierefreiheitserklärung.
+  - Hilfreiche Tools: WAVE, AXE DevTools
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Urheberrecht
+  - Integrieren Sie mehrere Medienarten (z. B. Bilder, Grafiken, Videos, Sounds, Schriftarten, Texte).
+  - Dokumentieren Sie die Urheberrechtshinweise und Lizenzen aller verwendeten Medien.
+  - Stellen Sie die Verwertungsrechte der Medien sicher, insb. für:
+  - Bilder, Grafiken, etc.
+  - Videos, Animationen etc.
+  - Musik, Soundeffekte, etc.
+  - Schriftarten
+  - Texte
+  - Hilfreiche Tools: Wikimedia Commons, …
 
-## Code scaffolding
+- Marke
+  - Designen Sie drei unterschiedliche Markenformen
+  - (Wortmarke + Wortbildmarke gelten als redundant und zählen daher nur als eine Markenform.)
+  - Erstellen Sie eine „About us“ Seite, die Ihre Marken und deren Bedeutung erklärt.
+  - Ordnen Sie Ihre Marken der passenden Nizza-Klassen zu.
+  - Stellen Sie sicher, dass Sie kein Markenrecht verletzen. Achten Sie insbesondere auf die
+  - Wortwahl
+  - Bildwahl
+  - Farbwahl
+  - Positionswahl
+  - Formwahl
+  - etc.
+  - Hilfreiche Tools: EUIPO eSearch, Madrid Monitor, TMview, seeip…
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Zielgruppe:
+jeder (gesunde Mensch) der eine Trainingsberatung oder einen Trainingsplan braucht.
