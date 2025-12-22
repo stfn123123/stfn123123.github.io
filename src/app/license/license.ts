@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './license.html',
   styleUrl: './license.css',
+  standalone: true
 })
 export class License {
 

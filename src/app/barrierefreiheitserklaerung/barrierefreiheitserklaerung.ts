@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './barrierefreiheitserklaerung.html',
   styleUrl: './barrierefreiheitserklaerung.css',
+  standalone: true
 })
 export class Barrierefreiheitserklaerung {
 

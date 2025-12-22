@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './privacy-notice.html',
   styleUrl: './privacy-notice.css',
+  standalone: true
 })
 export class PrivacyNotice {
 
