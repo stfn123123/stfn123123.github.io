@@ -61,6 +61,12 @@ jeder (gesunde Mensch) der eine Trainingsberatung oder einen Trainingsplan brauc
     - Gesetzliche und vertragliche Verpflichtungen
     - Bestehen automatisierter Entscheidungsfindung (z.B.: Profiling)
 
+#### Einwilligungserklärung:
+Beispielhafter Formulierungsvorschlag
+„Der Vertragspartner stimmt zu, dass seine persönlichen Daten, nämlich … (die Datenarten genau aufzählen, z.B. „Name“, „Adresse“ etc.) zum Zweck der … (genaue Zweckangabe, z.B. „zur Zusendung von Werbematerial über die Produkte der Firma …“) bei der Firma NN verarbeitet werden und die Daten … (die Datenarten genau aufzählen, z.B. „Name“, „Adresse“ etc.) zum Zweck der … (genaue Zweckangabe, z.B. „zur zentralen Abwicklung des Kunden-Beschwerdemanagements“) an … (genaue Angabe des Dritten, z.B. Name der Konzernmutter mit Anschrift) weitergegeben werden.
+
+Diese Einwilligung kann jederzeit bei … (Angabe der entsprechenden Kontaktdaten) widerrufen werden. Durch den Widerruf wird die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung nicht berührt.“
+
 
 ### Marke
   - Designen Sie drei unterschiedliche Markenformen

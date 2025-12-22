@@ -1,0 +1,46 @@
+.impressum-container {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+.impressum-container h2 {
+  color: #006666; /* Die dunkelgrüne Farbe aus deinem Beispiel */
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+strong {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.provider-info p,
+.legal-details p,
+.copyright p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.copyright {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}

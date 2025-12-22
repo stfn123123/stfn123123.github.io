@@ -1,0 +1,71 @@
+.privacy-container {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.modal-header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.modal-body h3 {
+  color: #2980b9;
+  border-left: 4px solid #2980b9;
+  padding-left: 10px;
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+.legal-basis {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #edf2f7;
+}
+
+.legal-basis h4 {
+  margin-top: 0;
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.contact-box {
+  background: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.info-text {
+  font-weight: bold;
+  color: #4a5568;
+}
+
+/* Scrollbar Styling für das Modal */
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
