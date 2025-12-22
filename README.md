@@ -1,26 +1,19 @@
 # Praxisbeispiel 1
+Sie sind der Eigentümer eines Start-Ups und vertreiben Software über einen Webshop im Internet.
+Im Rahmen dieser Übung, entwickeln Sie einen Webshop für Ihr Start-Up.
+
+
 
 ## Produkt das ich anbiete:
-ich bin nebenberuflich Fitnesstrainer und
-werde passend dazu eine Website bauen, die mich als Trainer und meine Dienstleistungen vorstellt.
-- Preise für eine personal training...
-    - Einzelstunde
-    - 10er Block
-    - 5er Block
-    - monatlicher Preis mit persönlicher Beratung jederzeit, Trainings- und Ernährungsplan, ...
+single player 2d abenteuer Spiel
+team, 5 entwickler, (ich + 4)
+ich bin der ceo
+Zielgruppe: gamer
+standort in wien
+spiel heißt: adventureGame
+einmalkauf
 
-- Wo:
-  - imaginäres Fitnesstudio in Wien
-- Anzahl der MItarbeiter
-  - nur ich
-
-## Inhalte der Website:
-- Bewerbung, bzw Anmeldung für ein coaching
-  - gemockter Zahlverlauf, (abo bzw einzelstunden)
-
-## Zielgruppe:
-jeder (gesunde Mensch) der eine Trainingsberatung oder einen Trainingsplan braucht.
-
+es gibt accounts, bestenlisten, in game käufe, aber kein multiplayer
 
 ### Barrierefreiheit
 - Die Website ist WCAG 2.2 AA konform.
