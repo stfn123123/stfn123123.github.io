@@ -1,7 +1,7 @@
 <style>
   :root {
     --primary-purple: #8A2BE2;
-    --bg-black: #000000;
+    --bg-black: #111111;
     --text-white: #ffffff;
   }
 
@@ -66,12 +66,24 @@
 
   /* Der lila Button aus dem Screenshot */
   .buy-btn {
-    background-color: #8A2BE2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+    background-color: transparent;
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+    border-radius: 50px;
+    padding: 12px 35px;
+
+    font-family: 'Arial Black', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
     cursor: pointer;
-    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .buy-btn:hover {
+    background-color: #222222 !important;
+    border-color: var(--primary-purple) !important;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
   }
 
   /* Footer Design */
@@ -113,7 +125,7 @@
 
 <header class="header">
   <div class="logo-container">
-    <a routerLink="/about-us" class="logo-link">DUMMY STUDIO</a>
+    <a routerLink="/about-us" class="logo-link">FreakyGameStudio</a>
     <span>|</span>
     <a routerLink="/" class="logo-link">MONLAPAS ADVENTURE</a>
   </div>

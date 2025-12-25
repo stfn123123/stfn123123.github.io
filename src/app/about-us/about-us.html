@@ -1,138 +1,153 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Monlapas Adventure</title>
-  <style>
-    /* Grunddesign (wie Homepage) */
-    body {
-      margin: 0;
-      font-family: 'Inter', 'Arial', sans-serif;
-      background-color: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
+<style>
+  .about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #111111;
+  }
 
-    /* Navigation */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: #000;
-      border-bottom: 1px solid #333;
-    }
-    .logo { font-weight: bold; letter-spacing: 1px; }
-    .nav-links a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 14px; }
-    .nav-links a:hover { color: #8A2BE2; }
+  .about-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 
-    /* Header Bereich */
-    .about-header {
-      padding: 80px 50px 40px 50px;
-      text-align: center;
-    }
-    .about-header h1 {
-      font-size: 50px;
-      text-transform: uppercase;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-    .purple-line {
-      width: 60px;
-      height: 4px;
-      background-color: #8A2BE2;
-      margin: 20px auto;
-    }
+  .about-header h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: -2px;
+  }
 
-    /* Team Bild Platzhalter */
-    .team-image-container {
-      width: 90%;
-      max-width: 1200px;
-      height: 500px;
-      margin: 0 auto 60px auto;
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .team-image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.6;
-    }
-    .placeholder-text {
-      position: absolute;
-      color: #555;
-      font-size: 18px;
-      text-transform: uppercase;
-      border: 2px dashed #333;
-      padding: 20px;
-    }
+  .accent-line {
+    width: 80px;
+    height: 6px;
+    background-color: #8A2BE2;
+    margin: 20px auto;
+  }
 
-    /* Content Bereich */
-    .content-container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px 100px 20px;
-    }
-    .ceo-quote {
-      font-size: 24px;
-      font-style: italic;
-      border-left: 4px solid #8A2BE2;
-      padding-left: 20px;
-      margin-bottom: 40px;
-      color: #ddd;
-    }
-    .main-text {
-      column-count: 2;
-      column-gap: 40px;
-      font-size: 17px;
-      color: #bbb;
-    }
-    .main-text p { margin-top: 0; }
+  /* Team Image Placeholder */
+  .team-hero {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)); /* Pfad anpassen */
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    margin-bottom: 50px;
+  }
 
-    @media (max-width: 768px) {
-      .main-text { column-count: 1; }
-      .team-image-container { height: 300px; }
-    }
-  </style>
-</head>
-<body>
+  .placeholder-text {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 2px dashed #333;
+    padding: 20px;
+  }
 
-<header class="about-header">
-  <h1>About Us</h1>
-  <div class="purple-line"></div>
-</header>
+  /* Text Content */
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #cccccc;
+  }
 
-<section class="team-image-container">
-  <div class="placeholder-text">Platzhalter: Teamfoto (5 Entwickler in Wien)</div>
-</section>
+  .ceo-mention {
+    color: #ffffff;
+    font-weight: bold;
+    border-left: 4px solid #8A2BE2;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+  }
 
-<main class="content-container">
-  <div class="ceo-quote">
-    "Wir wollten nicht nur ein Spiel entwickeln, sondern eine Welt erschaffen, in der man sich verlieren kann – handgezeichnet und mit Herz aus Wien."
-  </div>
+  h2 {
+    font-family: 'Arial Black', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
 
-  <div class="main-text">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p>
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <p>
-      Als 5-köpfiges Team bündeln wir unsere Kompetenzen in den Bereichen Design, Programmierung und Storytelling. Unser Standort im Herzen von Wien inspiriert uns täglich dazu, die Grenzen von 2D-Abenteuern neu auszuloten.
-    </p>
-    <p>
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.
-    </p>
-  </div>
-</main>
+  .highlight {
+    color: #8A2BE2;
+    font-weight: bold;
+  }
 
-</body>
-</html>
+  /* Name & Logo Section */
+  .origin-section {
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid #222;
+  }
+
+  @media (max-width: 800px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .about-header h1 { font-size: 2.5rem; }
+  }
+</style>
+
+<div class="about-container">
+  <header class="about-header">
+    <h1>About Us</h1>
+    <div class="accent-line"></div>
+  </header>
+
+  <section class="team-hero">
+    <div class="placeholder-text">Hier Foto: Die 5 Entwickler in Wien</div>
+  </section>
+
+  <main class="content-grid">
+    <div class="description-left">
+      <h2>Unsere Vision</h2>
+      <p>
+        <span class="highlight">FreakyGameStudios</span> wurde von fünf leidenschaftlichen Entwicklern erschaffen, die eine gemeinsame Mission teilen: Die Grenzen des 2D-Genres neu zu definieren.
+      </p>
+      <p>
+        Wir wollten den unverkennbaren Charme von <span class="highlight">Oldschool 2D-Platformern</span> mit der erzählerischen Tiefe und den Mechaniken moderner <span class="highlight">Adventure-Games</span> kombinieren. Das Ergebnis ist eine Spielerfahrung, die sowohl Nostalgie weckt als auch durch zeitgemäßes Gamedesign überzeugt.
+      </p>
+    </div>
+
+    <div class="description-right">
+      <h2>Das Studio</h2>
+      <p>
+        Mit unserem Sitz im Herzen von <span class="highlight">Wien</span> schöpfen wir Inspiration aus der kreativen Atmosphäre der Stadt. Hier wird jede Zeile Code und jedes Pixel von Hand gesetzt.
+      </p>
+
+      <div class="ceo-mention">
+        Unter der Leitung unseres CEOs <strong>Stefan Wagentristl</strong> arbeitet unser Team täglich daran, Monlapas Adventure zu einem unvergesslichen Erlebnis zu machen.
+      </div>
+
+      <p>
+        Als unabhängiges 5-Mann-Studio legen wir Wert auf volle kreative Freiheit und einen engen Austausch mit unserer Community.
+      </p>
+    </div>
+  </main>
+
+  <section class="origin-section">
+    <div class="content-grid">
+      <div>
+        <h2>Der Name</h2>
+        <p>
+          Der Name <span class="highlight">FreakyGameStudios</span> kommt davon, dass wir selbst ein bisschen "freaky" sind. Wir denken außerhalb der gewohnten Bahnen, lieben unkonventionelle Lösungen und scheuen uns nicht davor, verrückte Ideen in unsere Spiele einzubauen. [Hier kannst du noch mehr Details hinzufügen, warum ihr freaky seid...]
+        </p>
+      </div>
+      <div>
+        <h2>Das Logo</h2>
+        <p>
+          Unser Logo repräsentiert diese Philosophie. [Hier Platzhalter für die Erklärung der grafischen Elemente: Warum diese Farben? Was stellt die Form dar? Wie spiegelt es Wien oder eure Spiele wider?]
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
