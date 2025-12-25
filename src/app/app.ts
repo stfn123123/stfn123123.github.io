@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {PrivacyNotice} from './privacy-notice/privacy-notice';
+import {NgOptimizedImage} from '@angular/common';
 
 
 @Component({

@@ -29,19 +29,28 @@
     text-transform: uppercase;
     font-weight: 900;
     display: flex;
-    gap: 8px; /* Abstand um das Trennzeichen | */
+    align-items: center; /* Zentriert Bild und Text vertikal */
+    gap: 12px; /* Abstand um das Trennzeichen | */
   }
 
   /* Gemeinsames Design für beide Logo-Links */
   .logo-link {
     color: #ffffff;
     text-decoration: none;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
   }
 
-  /* Subtiler Effekt beim Drüberfahren (optional) */
+  /* Subtiler Effekt beim Drüberfahren */
   .logo-link:hover {
     color: #8A2BE2;
+  }
+
+  .brand-logo-img {
+    height: 50px; /* Größe des Logos */
+    width: auto;
+    display: block;
   }
 
   .nav-links {
@@ -56,15 +65,15 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 900;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, color 0.2s;
   }
 
   /* Aktiver Link oder Hover */
   .nav-links a:hover, .nav-links a.active-link {
-    color: #a855f7; /* Leicht helleres Lila für bessere Lesbarkeit auf Schwarz */
+    color: #a855f7;
   }
 
-  /* Der lila Button aus dem Screenshot */
+  /* Der pillenförmige Button */
   .buy-btn {
     background-color: transparent;
     color: var(--text-white);
@@ -84,6 +93,7 @@
     background-color: #222222 !important;
     border-color: var(--primary-purple) !important;
     box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
+    color: var(--primary-purple);
   }
 
   /* Footer Design */
@@ -123,22 +133,20 @@
   }
 </style>
 
-<header class="header-main">
-  <div class="logo-wrapper">
-    <a routerLink="/about-us" class="logo-image-link">
-      <img src="logo.png" alt="FreakyGameStudios Logo" class="brand-logo-img">
-    </a>
+<header class="header">
+  <div class="logo-container">
+    <a routerLink="/about-us" class="logo-link"> FreakyGameStudios </a>
 
     <span class="separator">|</span>
 
-    <a routerLink="/" class="logo-text-part">MONLAPAS ADVENTURE</a>
+    <a routerLink="/" class="logo-link">MONLAPAS ADVENTURE</a>
   </div>
 
-  <nav class="nav-group">
-    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="nav-item">Home</a>
-    <a href="#" class="nav-item">About the Game</a>
-    <a routerLink="/about-us" routerLinkActive="active-link" class="nav-item">About Us</a>
-    <button class="buy-button-pill">Jetzt Kaufen</button>
+  <nav class="nav-links">
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a href="#">About the Game</a>
+    <a routerLink="/about-us" routerLinkActive="active-link">About Us</a>
+    <button class="buy-btn">Jetzt Kaufen</button>
   </nav>
 </header>
 

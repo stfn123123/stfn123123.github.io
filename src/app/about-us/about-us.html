@@ -8,9 +8,23 @@
     background-color: #111111;
   }
 
+  /* --- HEADER MIT LOGO RECHTS --- */
   .about-header {
-    text-align: center;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert die ganze Gruppe auf der Seite */
+  }
+
+  .header-content-wrapper {
+    display: flex;
+    align-items: center; /* Richtet Text und Logo vertikal mittig aus */
+    gap: 40px; /* Abstand zwischen Text und Logo */
+    margin-bottom: 10px;
+  }
+
+  .header-titles {
+    text-align: right; /* Richtet den Text zum Logo hin aus */
   }
 
   .about-header h1 {
@@ -18,24 +32,35 @@
     font-size: 4rem;
     text-transform: uppercase;
     margin: 0;
+    line-height: 0.9;
     letter-spacing: -2px;
   }
 
+  .about-header h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+  }
+
+  .about-logo-large {
+    height: 160px; /* Größe des Gorilla-Logos auf der About-Seite */
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.3)); /* Subtiler lila Glow */
+  }
+
   .accent-line {
-    width: 80px;
+    width: 120px;
     height: 6px;
-    background-color: #8A2BE2;
-    margin: 20px auto;
+    background-color: #FFFFFF;
+    margin: 20px 0;
   }
 
   /* Team Image Placeholder */
   .team-hero {
     width: 100%;
     height: 450px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)); /* Pfad anpassen */
     background-color: #1a1a1a;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +109,6 @@
     font-weight: bold;
   }
 
-  /* Name & Logo Section */
   .origin-section {
     margin-top: 80px;
     padding-top: 60px;
@@ -92,6 +116,11 @@
   }
 
   @media (max-width: 800px) {
+    .header-content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    .header-titles { text-align: center; }
     .content-grid { grid-template-columns: 1fr; }
     .about-header h1 { font-size: 2.5rem; }
   }
@@ -99,8 +128,13 @@
 
 <div class="about-container">
   <header class="about-header">
-    <h1>About Us</h1>
-    <h2> FreakyGameStudios</h2>
+    <div class="header-content-wrapper">
+      <div class="header-titles">
+        <h1>About Us</h1>
+        <h2>FreakyGameStudios</h2>
+      </div>
+      <img src="logo.png" alt="FreakyGameStudios Logo" class="about-logo-large">
+    </div>
     <div class="accent-line"></div>
   </header>
 
@@ -140,13 +174,13 @@
       <div>
         <h2>Der Name</h2>
         <p>
-          Der Name <span class="highlight">FreakyGameStudios</span> kommt davon, dass wir selbst ein bisschen "freaky" sind. Wir denken außerhalb der gewohnten Bahnen, lieben unkonventionelle Lösungen und scheuen uns nicht davor, verrückte Ideen in unsere Spiele einzubauen. [Hier kannst du noch mehr Details hinzufügen, warum ihr freaky seid...]
+          Der Name <span class="highlight">FreakyGameStudios</span> rührt von unserer Philosophie her, Dinge anders anzugehen. Wir sind "freaky", weil wir unkonventionelle Pfade beschreiten, verrückte Ideen über sichere Konzepte stellen und unseren eigenen, leicht exzentrischen Humor in jedes Detail unserer Spiele einfließen lassen.
         </p>
       </div>
       <div>
         <h2>Das Logo</h2>
         <p>
-          Unser Logo repräsentiert diese Philosophie. [Hier Platzhalter für die Erklärung der grafischen Elemente: Warum diese Farben? Was stellt die Form dar? Wie spiegelt es Wien oder eure Spiele wider?]
+          Unser Logo – der Gorilla mit der Banane – ist das ultimative Symbol für unsere Studio-DNA. Der Gorilla steht für die rohe Kraft und Ausdauer, die die Spieleentwicklung erfordert, während die Banane den spielerischen Fokus symbolisiert. Es erinnert uns daran, dass trotz harter Arbeit der Spaß am Spiel immer an erster Stelle steht.
         </p>
       </div>
     </div>
