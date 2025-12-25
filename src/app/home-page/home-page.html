@@ -3,44 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    body { margin: 0; font-family: 'Arial', sans-serif; background-color: #111111; color: #fff; }
-
-    /* Navigation */
-    nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 20px 50px; background: rgba(0,0,0,0.9); position: fixed; width: 100%; z-index: 1000;
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111111;
+      color: #fff;
     }
-    .nav-links a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 14px; }
-    .buy-btn { background-color: #8A2BE2; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer; }
 
     /* Hero Section */
     .hero {
-      height: 100vh; background: linear-gradient(to right, rgba(0,0,0,0.8), transparent);
-      background-size: cover; display: flex; align-items: center; padding-left: 80px;
+      height: 100vh;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
     }
-    .hero-content h1 { font-size: 60px; margin-bottom: 10px; }
-    .hero-content p { font-size: 20px; margin-bottom: 30px; }
+
+    .hero-content h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
 
     /* Content Section */
-    .info-section { padding: 100px 80px; display: flex; gap: 50px; align-items: center; background: #111; }
-    .info-text h2 { color: #8A2BE2; font-size: 36px; }
+    .info-section {
+      padding: 100px 80px;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      background: #111;
+    }
+
+    .info-text h2 {
+      color: #8A2BE2;
+      font-size: 36px;
+    }
   </style>
 </head>
 <body>
+
 
 <section class="hero">
   <div class="hero-content">
     <h1>Monlapas <br> Adventure</h1>
     <p>Ein episches 2D-Abenteuer.</p>
-    <button style="padding: 15px 30px; border: 2px solid white; background: transparent; color: white; margin-right: 15px;">TRAILER</button>
+    <button
+      style="padding: 15px 30px; border: 2px solid white; background: transparent; color: white; margin-right: 15px;">
+      TRAILER
+    </button>
     <button class="buy-btn" style="padding: 17px 35px;">JETZT KAUFEN</button>
   </div>
 </section>
 
+<div class="pattern-banner"></div>
 <section class="info-section">
   <div class="info-text">
     <h2>Einmal kaufen, ewig spielen.</h2>
-    <p>Monlapas Adventure bietet klassisches Gameplay ohne versteckte Kosten. Erfahre mehr über unsere Vision und unser 5-köpfiges Team aus Österreich.</p>
+    <p>Monlapas Adventure bietet klassisches Gameplay ohne versteckte Kosten. Erfahre mehr über unsere Vision und unser
+      5-köpfiges Team aus Österreich.</p>
   </div>
 </section>
 

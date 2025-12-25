@@ -42,9 +42,24 @@
     align-items: center;
   }
 
-  /* Subtiler Effekt beim Drüberfahren */
+  .brand-logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+    transition: transform 0.1s ease-out;
+  }
+
+  .logo-link:hover .brand-logo-img {
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+
+  /* Optional: Damit der Text beim Logo-Hover auch lila wird */
   .logo-link:hover {
-    color: #8A2BE2;
+    text-decoration: none;
+    color: #a855f7;
+    transform: scale(1.05);
+    transition: 0.2s;
   }
 
   .brand-logo-img {
@@ -69,8 +84,9 @@
   }
 
   /* Aktiver Link oder Hover */
-  .nav-links a:hover, .nav-links a.active-link {
+  .nav-links a:hover {
     color: #a855f7;
+    transform: scale(1.05)
   }
 
   /* Der pillenförmige Button */
@@ -135,7 +151,9 @@
 
 <header class="header">
   <div class="logo-container">
-    <a routerLink="/about-us" class="logo-link"> FreakyGameStudios </a>
+    <a routerLink="/about-us" class="logo-link">
+      <img src="assets/logo.png" alt="FreakyGameStudios Logo" class="brand-logo-img" height="161" width="174">
+    </a>
 
     <span class="separator">|</span>
 

@@ -9,6 +9,7 @@ import {NgOptimizedImage} from '@angular/common';
   imports: [RouterOutlet, RouterLink, PrivacyNotice, RouterLinkActive],
   templateUrl: './app.html',
   styleUrl: './app.css'
+
 })
 export class App {
   protected readonly title = signal('praxisbsp');
