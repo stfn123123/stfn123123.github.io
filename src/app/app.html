@@ -123,18 +123,22 @@
   }
 </style>
 
-<header class="header">
-  <div class="logo-container">
-    <a routerLink="/about-us" class="logo-link">FreakyGameStudio</a>
-    <span>|</span>
-    <a routerLink="/" class="logo-link">MONLAPAS ADVENTURE</a>
+<header class="header-main">
+  <div class="logo-wrapper">
+    <a routerLink="/about-us" class="logo-image-link">
+      <img src="logo.png" alt="FreakyGameStudios Logo" class="brand-logo-img">
+    </a>
+
+    <span class="separator">|</span>
+
+    <a routerLink="/" class="logo-text-part">MONLAPAS ADVENTURE</a>
   </div>
 
-  <nav class="nav-links">
-    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
-    <a href="#">About the Game</a>
-    <a routerLink="/about-us" routerLinkActive="active-link">About Us</a>
-    <button class="buy-btn" routerLink="buy">Jetzt Kaufen</button>
+  <nav class="nav-group">
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="nav-item">Home</a>
+    <a href="#" class="nav-item">About the Game</a>
+    <a routerLink="/about-us" routerLinkActive="active-link" class="nav-item">About Us</a>
+    <button class="buy-button-pill">Jetzt Kaufen</button>
   </nav>
 </header>
 
