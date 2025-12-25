@@ -21,7 +21,7 @@ es gibt accounts, bestenlisten, in game käufe, aber kein multiplayer
 - Die Website enthält eine Barrierefreiheitserklärung.
 - Hilfreiche Tools: WAVE, AXE DevTools
   - Einleitung
-  - Stand der Vereinbarkeit (vollständig, teilweise, nicht) mit den Anforderungen
+  - Stand der Verenbarkeit (vollständig, teilweise, nicht) mit den Anforderungeni
   - Auflistung nicht barrierefreier Inhalte
   - Hinweise zur Erstellung dieser Erklärung zur Barrierefreiheit (Datum, Methode)
   - Feedback-Mechanismus
@@ -32,10 +32,10 @@ es gibt accounts, bestenlisten, in game käufe, aber kein multiplayer
   - Nutzer können der öffentlichen Stelle Barriere-Mängel melden
   - Reaktion auf Hinweis innerhalb von 2 Monaten
 
-  - In einer Barrierefreiheitserklärung oder in AGB darüber aufzuklären, wie dieDienstleistung die Barrierefreiheitsanforderungen erfüllt.
+  - In einer Barrierefreiheitserklärung oder in AGB darüber aufzuklären, wie die Dienstleistung die Barrierefreiheitsanforderungen erfüllt.
   - Beschreibung der Dienstleistung und der Funktion in barrierefreier Weise
-  - Korrekturmaßnahmen bei Nichtkonformität der Dienstleistun
-  - Informations- und Kooperationspflichten gegenüber derMarktüberwachungsbehörde (in AT: Sozialministerium)
+  - Korrekturmaßnahmen bei Nichtkonformität der Dienstleistung
+  - Informations- und Kooperationspflichten gegenüber der Marktüberwachungsbehörde (in AT: Sozialministerium)
   - Dienstleistungserbringer von Selbstbedienungsterminals sind verpflichtet, Informationen über die bauliche Umwelt zu erbringen
     - (z.B. den Zugang, die Gerätehöhe, Wendebereiche oder vorhandeneOrientierungssysteme an den jeweiligen Standorten.)
 

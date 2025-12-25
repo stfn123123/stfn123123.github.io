@@ -1,6 +1,6 @@
 <style>
   :root {
-    --primary-purple: #8A2BE2;
+    --primary-purple: #b76dfb;
     --bg-black: #111111;
     --text-white: #ffffff;
   }
@@ -57,7 +57,7 @@
   /* Optional: Damit der Text beim Logo-Hover auch lila wird */
   .logo-link:hover {
     text-decoration: none;
-    color: #a855f7;
+    color: #b76dfb;
     transform: scale(1.05);
     transition: 0.2s;
   }
@@ -84,9 +84,10 @@
   }
 
   /* Aktiver Link oder Hover */
-  .nav-links a:hover {
-    color: #a855f7;
-    transform: scale(1.05)
+  .nav-links a:hover, .nav-links .active-link {
+    color: #b76dfb;
+    transform: scale(1.05);
+    opacity: 1;
   }
 
   /* Der pillenförmige Button */
