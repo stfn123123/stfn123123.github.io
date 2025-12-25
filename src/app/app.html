@@ -1,29 +1,150 @@
-<router-outlet></router-outlet>
+<style>
+  :root {
+    --primary-purple: #8A2BE2;
+    --bg-black: #000000;
+    --text-white: #ffffff;
+  }
 
-<dialog #privacyModal>
-  <div class="modal-wrapper">
-    <app-privacy-notice></app-privacy-notice>
+  /* Globaler Reset für Body, um Ränder zu vermeiden */
+  body {
+    margin: 0;
+    background-color: var(--bg-black);
+  }
 
-    <button class="close-btn" (click)="privacyModal.close()">Schließen</button>
-  </div>
-</dialog>
+  /* Kopfzeile exakt nach Screenshot */
+  .header {
+    background-color: var(--bg-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  /* Styling für das gesplittete Logo */
+  .logo-container {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    gap: 8px; /* Abstand um das Trennzeichen | */
+  }
+
+  /* Gemeinsames Design für beide Logo-Links */
+  .logo-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  /* Subtiler Effekt beim Drüberfahren (optional) */
+  .logo-link:hover {
+    color: #8A2BE2;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    transition: opacity 0.2s;
+  }
+
+  /* Aktiver Link oder Hover */
+  .nav-links a:hover, .nav-links a.active-link {
+    color: #a855f7; /* Leicht helleres Lila für bessere Lesbarkeit auf Schwarz */
+  }
+
+  /* Der lila Button aus dem Screenshot */
+  .buy-btn {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Footer Design */
+  .footer {
+    background-color: var(--bg-black);
+    padding: 50px 40px;
+    border-top: 1px solid #1a1a1a;
+    text-align: center;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-nav a:hover {
+    color: var(--text-white);
+  }
+
+  .copyright {
+    color: #888;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+  }
+</style>
 
 <header class="header">
-  <nav>
-    <ul>
-      <a routerLink=''> start </a>
-    </ul>
-  </nav>
+  <div class="logo-container">
+    <a routerLink="/about-us" class="logo-link">DUMMY STUDIO</a>
+    <span>|</span>
+    <a routerLink="/" class="logo-link">MONLAPAS ADVENTURE</a>
+  </div>
 
+  <nav class="nav-links">
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a href="#">About the Game</a>
+    <a routerLink="/about-us" routerLinkActive="active-link">About Us</a>
+    <button class="buy-btn" routerLink="buy">Jetzt Kaufen</button>
+  </nav>
 </header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
 <footer class="footer">
-  <nav>
+  <nav class="footer-nav">
     <ul>
       <li><a routerLink="/impressum">Impressum</a></li>
-      <li><a routerLink="/about-us">About us</a></li>
       <li><a routerLink="/barrierefreiheit">Barrierefreiheit</a></li>
       <li><a routerLink="/license">License</a></li>
       <li><a href="javascript:void(0)" (click)="privacyModal.showModal()">Datenschutzerklärung</a></li>
     </ul>
   </nav>
+  <div class="copyright">© 2025 Monlapas Adventure Wien</div>
 </footer>
+
+<dialog #privacyModal>
+  <div style="padding: 20px; background: #111; color: white;">
+    <app-privacy-notice></app-privacy-notice>
+    <button (click)="privacyModal.close()" class="buy-btn" style="width: 100%; margin: 20px 0 0 0;">Schließen</button>
+  </div>
+</dialog>

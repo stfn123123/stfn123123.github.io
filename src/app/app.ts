@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import {RouterLink, RouterOutlet} from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {PrivacyNotice} from './privacy-notice/privacy-notice';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, PrivacyNotice],
+  imports: [RouterOutlet, RouterLink, PrivacyNotice, RouterLinkActive],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

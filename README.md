@@ -5,13 +5,13 @@ Im Rahmen dieser Übung, entwickeln Sie einen Webshop für Ihr Start-Up.
 
 
 ## Produkt das ich anbiete:
-single player 2d abenteuer Spiel
-team, 5 entwickler, (ich + 4)
-ich bin der ceo
-Zielgruppe: gamer
-standort in wien
-spiel heißt: adventureGame
-einmalkauf
+- single player 2d abenteuer Spiel
+- team, 5 entwickler, (ich + 4)
+- ich bin der ceo
+- Zielgruppe: gamer
+- standort in wien
+- spiel heißt: Monlapas Adventure
+- einmalkauf
 
 es gibt accounts, bestenlisten, in game käufe, aber kein multiplayer
 
