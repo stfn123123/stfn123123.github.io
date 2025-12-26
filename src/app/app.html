@@ -24,7 +24,7 @@
   /* Styling für das gesplittete Logo */
   .logo-container {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-weight: 900;
@@ -78,7 +78,7 @@
     color: var(--text-white);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 900;
     transition: opacity 0.2s, color 0.2s;
   }
@@ -99,7 +99,7 @@
     padding: 12px 35px;
 
     font-family: 'Arial Black', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
     cursor: pointer;
@@ -133,7 +133,7 @@
   .footer-nav a {
     color: #888;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
     text-transform: uppercase;
     font-family: Arial, sans-serif;
   }
@@ -144,7 +144,7 @@
 
   .copyright {
     color: #888;
-    font-size: 10px;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: Arial, sans-serif;
   }
@@ -179,15 +179,8 @@
       <li><a routerLink="/impressum">Impressum</a></li>
       <li><a routerLink="/barrierefreiheit">Barrierefreiheit</a></li>
       <li><a routerLink="/license">License</a></li>
-      <li><a href="javascript:void(0)" (click)="privacyModal.showModal()">Datenschutzerklärung</a></li>
+      <li><a routerLink="/privacy-notice">Datenschutzerklärung</a></li>
     </ul>
   </nav>
   <div class="copyright">© 2025 Monlapas Adventure Wien</div>
 </footer>
-
-<dialog #privacyModal>
-  <div style="padding: 20px; background: #111; color: white;">
-    <app-privacy-notice></app-privacy-notice>
-    <button (click)="privacyModal.close()" class="buy-btn" style="width: 100%; margin: 20px 0 0 0;">Schließen</button>
-  </div>
-</dialog>
