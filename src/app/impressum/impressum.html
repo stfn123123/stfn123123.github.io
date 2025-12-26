@@ -1,29 +1,168 @@
-<div class="impressum-container">
-  <h2>Impressum</h2>
-  <p class="subtitle">Informationen gemäß § 5 E-Commerce Gesetz und Offenlegung gemäß § 24 Mediengesetz</p>
+<style>
+  .legal-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 60px 40px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    line-height: 1.8;
+  }
 
-  <p><strong>Personal Trainer</strong><br>
-    Stefan Wagentristl</p>
+  .legal-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 
-  <section class="provider-info">
-    <p><strong>Dienstanbieter und Medieninhaber:</strong><br>
-      Stefan Wagentristl<br>
-      Adresse in Wien<br>
-      1100 Wien<br>
-      Telefon: +43 67 67 67 67<br>
-      E-Mail: stefan.wagentristl@email.at</p>
+  .legal-header h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -1px;
+  }
+
+  .accent-line {
+    width: 80px;
+    height: 6px;
+    background-color: #b76dfb;
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-family: 'Arial Black', sans-serif;
+    color: #b76dfb;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-size: 1.2rem; /* Große, lesbare Schrift */
+  }
+
+  .info-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+  }
+
+  .info-label {
+    font-weight: bold;
+    color: #aaaaaa;
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .info-value {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.3rem;
+  }
+
+  .price-box {
+    background-color: rgba(183, 109, 251, 0.1);
+    border-left: 5px solid #b76dfb;
+    padding: 30px;
+    margin-top: 40px;
+    font-size: 1.1rem;
+  }
+
+  a {
+    color: #b76dfb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover, a:focus {
+    text-decoration: underline;
+    outline: 3px solid #b76dfb;
+    outline-offset: 4px;
+  }
+
+  footer {
+    margin-top: 60px;
+    font-size: 1rem;
+    color: #999999;
+    text-align: center;
+  }
+</style>
+
+<div class="legal-container">
+  <header class="legal-header">
+    <h1>Impressum</h1>
+    <div class="accent-line"></div>
+    <p style="font-size: 1.2rem; color: #ccc;">Offenlegung gemäß § 5 ECG und § 24 MedG</p>
+  </header>
+
+  <section class="info-grid">
+    <div class="info-item">
+      <span class="info-label">Medieninhaber & Herausgeber</span>
+      <span class="info-value">FreakyGameStudios</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Geografische Anschrift</span>
+      <span class="info-value">freakyGasse 15, 1100 Wien, Österreich</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Kontakt</span>
+      <span class="info-value">
+        E-Mail: <a href="mailto:kontact@freakygamestudios.com">kontact@freakygamestudios.com</a>
+      </span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Unternehmensdaten</span>
+      <span class="info-value">
+        UID-Nummer: ATU00000000<br>
+        Mitglied der Wirtschaftskammer Wien (WKO)
+      </span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Aufsichtsbehörde</span>
+      <span class="info-value">Magistrat der Stadt Wien</span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Gewerberecht</span>
+      <span class="info-value">
+        Anwendbare Vorschriften: Gewerbeordnung<br>
+        Abrufbar unter: <a href="https://www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a>
+      </span>
+    </div>
+
+    <div class="info-item">
+      <span class="info-label">Herstellung</span>
+      <span class="info-value">
+        Hersteller: FreakyGameStudios<br>
+        Verlags- und Herstellungsort: Wien
+      </span>
+    </div>
   </section>
 
-  <section class="legal-details">
-    <p><strong>Aufsichtsbehörde:</strong> Magistrat der Stadt Wien</p>
-
-    <p><strong>Berufsbezeichnung:</strong> Dipl. Health- Fitness und Personaltrainer (Gewerbe erbracht und Ausbildung gemacht in Österreich)</p>
-
-    <p><strong>Anwendbare Rechtsvorschriften:</strong> Die Tätigkeit unterliegt der Gewerbeordnung in der jeweils geltenden Fassung.</p>
-    <p><strong>Umsatzsteuerbefreit – Kleinunternehmer gem. § 6 Abs. 1 Z 27 UStG</strong></p>
+  <section class="price-box">
+    <h2 style="margin-top: 0; border: none; font-size: 1.4rem;">Hinweis zu Preisangaben (§ 5 Abs. 2 ECG)</h2>
+    <p>
+      Alle auf dieser Website angeführten Preise verstehen sich als <strong>Bruttopreise</strong> inklusive der gesetzlichen Umsatzsteuer. Da es sich um digitale Inhalte handelt, fallen keine Versandkosten an.
+    </p>
   </section>
 
-  <section class="copyright">
-    <p>Soweit nicht anders angegeben liegt das Copyright für Texte und Abbildungen dieser Webseite bei Stefan Wagentristl. Verantwortlich für den Inhalt dieser Webseite ist Stefan Wagentristl.</p>
-  </section>
+  <footer>
+    <p>Stand: Dezember 2025</p>
+    <p>Quellen: <br> https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10000719
+    https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20001703&Paragraf=5</p>
+  </footer>
 </div>

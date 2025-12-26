@@ -43,6 +43,17 @@
       color: #b76dfb;
       font-size: 36px;
     }
+
+    .buy-btn {
+      padding: 17px 35px;
+      background-color: #b76dfb;
+      font-size: 20px;
+    }
+
+    .buy-btn:hover{
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
   </style>
 </head>
 <body>
@@ -52,11 +63,7 @@
   <div class="hero-content">
     <h1>Monlapas <br> Adventure</h1>
     <p>Ein episches 2D-Abenteuer.</p>
-    <button
-      style="padding: 15px 30px; border: 2px solid white; background: transparent; color: white; margin-right: 15px;">
-      TRAILER
-    </button>
-    <button class="buy-btn" style="padding: 17px 35px;">JETZT KAUFEN</button>
+    <button class="buy-btn" routerLink ="/buy">JETZT KAUFEN</button>
   </div>
 </section>
 

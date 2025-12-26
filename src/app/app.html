@@ -193,11 +193,13 @@
     line-height: 1.5;
   }
   .cookie-content a {
-    color: #b76dfb;
+    color: #ffffff;
     text-decoration: underline;
     font-weight: bold;
   }
-
+  .cookie-content a:hover {
+    color: #b76dfb;
+  }
   .cookie-actions {
     display: flex;
     gap: 15px;
@@ -262,7 +264,7 @@
     <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
     <a href="#">About the Game</a>
     <a routerLink="/about-us" routerLinkActive="active-link">About Us</a>
-    <button class="buy-btn" routerLink="/buy">Jetzt Kaufen</button>
+  <!--  <button class="buy-btn" routerLink="/buy">Jetzt Kaufen</button> -->
   </nav>
 </header>
 
