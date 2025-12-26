@@ -75,7 +75,7 @@
   }
 
   .nav-links a {
-    color: var(--text-white);
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -148,6 +148,103 @@
     text-transform: uppercase;
     font-family: Arial, sans-serif;
   }
+
+  /* cookies */
+
+  .cookie-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  }
+
+  .cookie-banner {
+    background: #111111;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+  }
+
+  .cookie-content h3 {
+    margin: 0 0 10px 0;
+    font-family: 'Arial Black', sans-serif;
+    color: #b76dfb;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  .cookie-content p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  .cookie-content a {
+    color: #b76dfb;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .cookie-actions {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+  }
+
+  /* WCAG 2.2: Große Klickflächen (min. 44px Höhe für bessere Bedienbarkeit) */
+  .cookie-btn {
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 140px;
+  }
+
+  .cookie-btn.primary {
+    background-color: #b76dfb;
+    color: white;
+    border: none;
+  }
+
+  .cookie-btn.secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #555;
+  }
+
+  /* WCAG 2.2 Fokus-Sichtbarkeit für Tastaturnutzer */
+  .cookie-btn:focus-visible {
+    outline: 3px solid #b76dfb;
+    outline-offset: 4px;
+  }
+
+  .cookie-btn:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive für Mobile */
+  @media (max-width: 600px) {
+    .cookie-banner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 </style>
 
 <header class="header">
@@ -165,7 +262,7 @@
     <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
     <a href="#">About the Game</a>
     <a routerLink="/about-us" routerLinkActive="active-link">About Us</a>
-    <button class="buy-btn">Jetzt Kaufen</button>
+    <button class="buy-btn" routerLink="/buy">Jetzt Kaufen</button>
   </nav>
 </header>
 
@@ -184,3 +281,20 @@
   </nav>
   <div class="copyright">© 2025 Monlapas Adventure Wien</div>
 </footer>
+
+<div class="cookie-overlay" *ngIf="showCookies">
+  <div class="cookie-banner" role="dialog" aria-labelledby="cookie-title">
+    <div class="cookie-content">
+      <h3 id="cookie-title">Cookie-Einstellungen</h3>
+      <p>
+        Wir nutzen Cookies, um dein Erlebnis bei Monlapas Adventure zu verbessern.
+        Details findest du in unserer
+        <a routerLink="/privacy-notice" (click)="showCookies = false">Datenschutzerklärung</a>.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn secondary" (click)="setCookies(false)">Ablehnen</button>
+      <button class="cookie-btn primary" (click)="setCookies(true)">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>

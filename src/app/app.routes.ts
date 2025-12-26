@@ -4,8 +4,8 @@ import { AboutUs} from './about-us/about-us';
 import { Barrierefreiheitserklaerung} from './barrierefreiheitserklaerung/barrierefreiheitserklaerung';
 import { License} from './license/license';
 import {PrivacyNotice} from './privacy-notice/privacy-notice';
-import {HomePage} from './home-page/home-page';
-import {BuyPage} from './buy-page/buy-page';
+import { HomePage } from './home-page/home-page';
+import { BuyPage } from './buy-page/buy-page';
 
 export const routes: Routes = [
   { path: '', component: HomePage },
