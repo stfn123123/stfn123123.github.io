@@ -30,4 +30,5 @@ export class App {
     localStorage.setItem('cookieConsent', agreed ? 'accepted' : 'declined');
     this.showCookies = false;
   }
+
 }

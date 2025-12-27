@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class AboutUs {
-
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }

@@ -8,4 +8,8 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home-page.html',
   styleUrl: './home-page.css'
 })
-export class HomePage {}
+export class HomePage {
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
+}

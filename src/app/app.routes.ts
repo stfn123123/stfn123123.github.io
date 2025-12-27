@@ -6,6 +6,7 @@ import { License} from './license/license';
 import {PrivacyNotice} from './privacy-notice/privacy-notice';
 import { HomePage } from './home-page/home-page';
 import { BuyPage } from './buy-page/buy-page';
+import { AboutGame} from './about-game/about-game'
 
 export const routes: Routes = [
   { path: '', component: HomePage },
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'barrierefreiheit', component: Barrierefreiheitserklaerung },
   { path: 'buy', component: BuyPage },
   { path: 'privacy-notice', component: PrivacyNotice },
+  { path: 'about', component: AboutGame },
 ];

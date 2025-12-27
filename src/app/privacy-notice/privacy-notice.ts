@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class PrivacyNotice {
-
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }

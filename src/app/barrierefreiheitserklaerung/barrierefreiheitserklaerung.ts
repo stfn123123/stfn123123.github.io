@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   standalone: true
 })
 export class Barrierefreiheitserklaerung {
-
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }

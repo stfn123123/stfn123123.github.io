@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <style>
     body {
+      overflow-x: hidden;
       margin: 0;
       font-family: 'Arial', sans-serif;
       background-color: #111111;
@@ -13,11 +14,21 @@
     /* Hero Section */
     .hero {
       height: 100vh;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+      background-image: url('/assets/forest_gif.gif');
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
       background-size: cover;
       display: flex;
       align-items: center;
       padding-left: 80px;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 15px;
+      color: white;
     }
 
     .hero-content h1 {
@@ -50,9 +61,55 @@
       font-size: 20px;
     }
 
-    .buy-btn:hover{
+    .buy-btn:hover {
       transform: scale(1.05);
       transition: 0.2s;
+    }
+
+    .info-section {
+      background-color: #111111; /* Passend zum Rest der Seite */
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #222;
+    }
+
+    .info-container {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .info-text h2 {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+    }
+
+    .highlight {
+      color: #b76dfb;
+    }
+
+    .info-link {
+      display: inline-block;
+      font-family: 'Arial Black', sans-serif;
+      font-size: 1rem;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 12px 30px;
+      border: 2px solid #ffffff;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+
+    .info-link:hover {
+      background-color: #ffffff;
+      color: #111111;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(183, 109, 251, 0.4);
     }
   </style>
 </head>
@@ -63,16 +120,23 @@
   <div class="hero-content">
     <h1>Monlapas <br> Adventure</h1>
     <p>Ein episches 2D-Abenteuer.</p>
-    <button class="buy-btn" routerLink ="/buy">JETZT KAUFEN</button>
+    <button class="buy-btn" routerLink="/buy"><strong>JETZT KAUFEN</strong></button>
   </div>
 </section>
 
+<br>
 <div class="pattern-banner"></div>
+
 <section class="info-section">
-  <div class="info-text">
-    <h2>Einmal kaufen, ewig spielen.</h2>
-    <p>Monlapas Adventure bietet klassisches Gameplay ohne versteckte Kosten. Erfahre mehr über unsere Vision und unser
-      5-köpfiges Team aus Österreich.</p>
+  <div class="info-container">
+    <div class="info-text">
+      <h2><span class="highlight">Monlapas Adventure</span></h2>
+      <div class="accent-line-small"></div>
+      <p>
+        Monlapas Adventure bietet hereinragendes Adventure-Gameplay. Finde mehr heraus:
+      </p>
+      <a routerLink="/about" class="info-link">MEHR ÜBER DAS SPIEL</a>
+    </div>
   </div>
 </section>
 

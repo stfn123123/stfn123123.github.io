@@ -135,7 +135,6 @@ Diese Einwilligung kann jederzeit bei … (Angabe der entsprechenden Kontaktdate
 
 
 
-
 Jedes Eingabefeld braucht zugeordnetes <label>
 Präzise Formulierungen des Text im Label: z. B. „E-Mail-Adresse“ statt nur„Email“
 Fehlermeldungen bei falscher Eingabe automatisch fokussiert
