@@ -68,13 +68,64 @@
     margin-bottom: 50px;
   }
 
-  .placeholder-text {
-    color: #444;
+  /* Container für die Team-Sektion */
+  .team-grid-container {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .team-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Wichtig für Mobile-Ansicht */
+  }
+
+  .team-member {
+    flex: 1;
+    min-width: 200px; /* Verhindert, dass sie zu klein werden */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Rahmen für die Bilder (passend zum Studio-Stil) */
+  .member-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Macht das Bild quadratisch */
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+
+  .member-image-wrapper:hover {
+    border-color: #b76dfb; /* Lila Highlight bei Hover */
+  }
+
+  .member-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Schneidet das Bild passend zu */
+  }
+
+  .member-name {
+    font-family: 'Arial Black', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border: 2px dashed #333;
-    padding: 20px;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  /* Anpassung für kleine Bildschirme */
+  @media (max-width: 600px) {
+    .team-flex {
+      justify-content: center;
+    }
+    .team-member {
+      flex: 0 0 45%; /* Zwei Bilder pro Zeile auf Handys */
+    }
   }
 
   /* Text Content */
@@ -147,9 +198,6 @@
     <div class="accent-line"></div>
   </header>
 
-  <section class="team-hero">
-    <div class="placeholder-text">Hier Foto: Die 5 Entwickler in Wien</div>
-  </section>
 
   <main class="content-grid">
     <div class="description-left">
@@ -178,13 +226,45 @@
       </div>
 
       <p>
-        Als unabhängiges 5-Mann-Studio legen wir Wert auf volle kreative Freiheit und einen engen Austausch mit unserer
+        Als unabhängiges 4-Mann-Studio legen wir Wert auf volle kreative Freiheit und einen engen Austausch mit unserer
         Community.
       </p>
     </div>
   </main>
 
 
+  <section class="team-grid-container">
+    <h2>Das Team</h2>
+    <div class="team-flex">
+      <div class="team-member">
+        <div class="member-image-wrapper">
+          <img src="assets/real_man_office_worker_2.jpg" alt="Team Mitglied">
+        </div>
+        <p class="member-name">CEO: Stefan Wagentristl <br>(kein echtes bild)</p>
+      </div>
+
+      <div class="team-member">
+        <div class="member-image-wrapper">
+          <img src="assets/real_man_office_worker_1.jpg" alt="Team Mitglied">
+        </div>
+        <p class="member-name">Vorname Nachname</p>
+      </div>
+
+      <div class="team-member">
+        <div class="member-image-wrapper">
+          <img src="assets/man_office_worker.png" alt="Team Mitglied">
+        </div>
+        <p class="member-name">Martin Mustermann</p>
+      </div>
+
+      <div class="team-member">
+        <div class="member-image-wrapper">
+          <img src="assets/woman_office_worker.png" alt="Team Mitglied">
+        </div>
+        <p class="member-name">Anna Musterfrau</p>
+      </div>
+    </div>
+  </section>
 
   <section class="origin-section">
     <div class="content-grid">
