@@ -2,6 +2,7 @@
   "name": "praxisbsp",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "ng build --configuration production --base-href / && npx angular-cli-ghpages --dir=dist/praxisbsp/browser",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
