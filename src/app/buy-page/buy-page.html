@@ -1,13 +1,58 @@
 <style>
+
+  /* Hauptcontainer für die Seite */
   .buy-container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 40px;
+    width: 95%;            /* Nutzt 95% des verfügbaren Platzes */
+    max-width: 700px;      /* Kleiner als vorher (war 800px) */
+    margin: 30px auto;     /* Weniger Außenabstand oben/unten */
+    padding: 25px;         /* Etwas weniger Innenabstand */
     background-color: #1a1a1a;
     border: 1px solid #333;
     border-radius: 8px;
     font-family: 'Arial', sans-serif;
     color: #fff;
+    box-sizing: border-box; /* WICHTIG: Padding wird nicht zur Breite addiert */
+  }
+
+  /* Modal-Inhalt (Das Fenster im Overlay) */
+  .modal-content {
+    position: relative;
+    background: #0d0d0d;
+    width: 90%;            /* Nimmt auf Handys fast die ganze Breite ein */
+    max-width: 600px;      /* Kompakter für Desktop (war 700px/900px) */
+    max-height: 90vh;      /* Verhindert, dass das Modal oben/unten aus dem Screen ragt */
+    overflow-y: auto;      /* Erlaubt Scrollen innerhalb des Modals, falls nötig */
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+  }
+
+  /* Formular-Optimierung für Desktop (ab 768px) */
+  @media (min-width: 768px) {
+    .contact-grid, .address-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+
+  /* Buttons etwas schmaler für den kleineren Container */
+  .action-btn {
+    width: 100%;
+    max-width: 400px;      /* Buttons werden auf Desktop nicht mehr riesig */
+    margin: 10px auto;
+    display: block;        /* Zentriert den Button durch margin auto */
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  /* Input-Felder Fix */
+  input, textarea {
+    width: 100%;           /* Füllt den verfügbaren Platz im Grid korrekt aus */
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 1rem;
   }
 
   h1, h2 {
@@ -182,8 +227,7 @@
     <h1><span class="accent-purple">Kauf-Überblick</span></h1>
     <div class="overview-card">
       <div>
-        <h3>Monlapas Adventure (Digital Deluxe)</h3>
-        <p>Inkl. Soundtrack & Digital Artbook</p>
+        <h3>Monlapas Adventure (Deluxe)</h3>
       </div>
       <div style="font-size: 28px; font-weight: bold; color: #b76dfb;">€ 19,99</div>
     </div>

@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-license',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './license.html',
   styleUrl: './license.css',
   standalone: true

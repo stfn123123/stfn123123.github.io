@@ -115,7 +115,6 @@ Diese Einwilligung kann jederzeit bei … (Angabe der entsprechenden Kontaktdate
     Die Gewährung einer Lizenz beinhaltet idR das Rechtauf Nutzung, Herstellung oder Verkauf.
 
 - beim Kauf bleiben eigentlich alle Rechte bei mir?
-  man darf Trainingsplan etc nicht weiterverkaufen...
 
 ### Kontaktseite / Impressum
 - Erstellen Sie ein Impressum das den Pflichten gemäß § 24 Mediengesetz bzw. den jeweiligen nationalen Vorschriften entspricht.
